@@ -2,5 +2,5 @@
     "watch": ["src", "backend"],
     "ext": ".ts,.js",
     "ignore": [],
-    "exec": "npm run start:prod"
+    "exec": "npm run start"
 }
