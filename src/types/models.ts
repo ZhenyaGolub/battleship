@@ -13,9 +13,19 @@ export type Registration = {
 } & Id;
 
 export type UpdateWinners = {
-    type: 'update_winners';
+    type: Operations.UpdateWinners;
     data: Array<{
         name: string;
         wins: number;
     }>;
+} & Id;
+
+export type CreateRoom = {
+    type: Operations.CreateRoom;
+    data: string;
+} & Id;
+
+export type AddUserToRoom = {
+    type: Operations.AddUserToRoom;
+    data: { indexRoom: number };
 } & Id;
